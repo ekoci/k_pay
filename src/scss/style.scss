@@ -18,6 +18,7 @@ File: scss
 
 //Main Styles
 @import 'components';
+@import "receipt";
 body{
 	.page-content.container-fluid,.page-wrapper{
 		background: #fff;
