@@ -25,4 +25,29 @@
 
   .receipt-amount{
     padding-top: 20px;padding-bottom: 20px;
+    span{
+      font-size: 20px;font-weight: bold;
+    }
+  }
+
+  .receipt-amount-kes{
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px
+  }
+
+  .receipt-mpesa{
+    text-align: right;padding-bottom: 10px;padding-top: 10px
+  }
+
+  .reciept-paymnet{
+    padding-bottom: 10px;padding-top: 10px
+  }
+
+  .receipt-powered{
+    padding-top: 10px;font-weight: bold
+  }
+
+  .receipt-trans-kes{
+    text-align: right;padding-top: 15px
   }
