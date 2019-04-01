@@ -1475,28 +1475,6 @@
         <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- ============================================================== -->
-            <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-           <!--  <div class="page-breadcrumb">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-xs-12 align-self-center">
-                        <h5 class="font-medium text-uppercase mb-0">API</h5>
-                    </div>
-                    <div class="col-lg-9 col-md-8 col-xs-12 align-self-center">
-                        <button class="btn btn-danger text-white float-right ml-3 d-none d-md-block">Buy Ample Admin</button>
-                        <nav aria-label="breadcrumb" class="mt-2 float-md-right float-left">
-                            <ol class="breadcrumb mb-0 justify-content-end p-0">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">API</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div> -->
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="page-content container-fluid space-content content-before">
@@ -1506,121 +1484,201 @@
                 <!-- add row -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="material-card card">
+                        <div class="material-card card select-bill">
                             <div class="card-body">
-                                <div class="card-grey-header">
-                                    <div class="col-12">
-                                        <h4 class="card-title">BULK AIRTIME</h4>
-                                        <p>Kindly upload or create a list to be able to make bulk airtime purchases.</p> 
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-sm-12">
-                                               <label class="btn btn-primary btn-primary-template mb-2">
-                                                  Upload list <input type="file" style="display: none;">
-                                             </label>
-                                            <button id="create" class="btn btn-primary btn-primary-template mb-2">Create list</button>
-                                        </div>
-                                         <div class="col-lg-6 col-sm-12">
-                                             <h6>Previous lists</h6>
-                                             <span class="blue-list-previous">Payroll</span>
-                                             <span class="blue-list-previous">Casuals</span>
-                                             <span class="blue-list-previous">Suppliers</span>
-                                         </div>
-                                        </div>
-                                     </div>
+                                <div style="width: 100%;height: 100px;" class="row">
+                                    <img src="../../assets/images/photo/bill-back-button.JPG" class="bill-back-button" alt="Smiley face" width="100">
+                                    <div class="bill-header"><span>BULK AIRTIME SUMMARY:</span></div>
                                 </div>
-                               
-                                 <div class="table-responsive content_table">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>TRANSC. NO.</th>
-                                                <th>DATE</th>
-                                                <th>GROUP</th>
-                                                <th>NUMBER </th>
-                                                <th>AMOUNT</th>
-                                                <th>MEDIUM</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>#3546474</td>
-                                                <td>23/02/2018</td>
-                                                <td>CASUALS</td>
-                                                <td>200</td>
-                                                <td>KES 350,000</td>
-                                                <td>MPESA</td>
-                                               <td style="text-align: right;">
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>#3546474</td>
-                                                <td>23/02/2018</td>
-                                                <td>CASUALS</td>
-                                                <td>200</td>
-                                                <td>KES 350,000</td>
-                                                <td>MPESA</td>
-                                                <td style="text-align: right;">
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>#3546474</td>
-                                                <td>23/02/2018</td>
-                                                <td>CASUALS</td>
-                                                <td>200</td>
-                                                <td>KES 350,000</td>
-                                                <td>MPESA</td>
-                                                <td style="text-align: right;">
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="icon-blue">
-                                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                                    </span>
-                                                </td>
+                             <div class="bill-airtime-content">
+                                 <div class="row">
+                                    <div class="col">
+                                        <div>
+                                                <img src="../../assets/images/photo/bulk-airtime-1.PNG" class="bulk-airtime-photo" alt="Smiley face"> 
+                                        </div>
+                                        <div class="bulk-airtime-label">
+                                                SAFARICOM:
+                                        </div>
+                                        <div style="border-right: 1px solid black">
 
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                     <ul class="list-unstyled" id="rankings"></ul>
-                                </div>
+                                       
+                                        <div class="row">
+                                                <div class="col bulk-airtime-item-label">
+                                                       Number:
+                                                </div>
+                                                <div class="col bulk-airtime-item-label">
+                                                    30
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col bulk-airtime-item-label">
+                                                           TOTAL AMOUNT:
+                                                    </div>
+                                                    <div class="col bulk-airtime-item-label">
+                                                        KES: 140,000
+                                                    </div>
+                                                </div>
+                                                <div class="row"> 
+                                                    <div class="col bulk-airtime-item-label">
+                                                    TRANSATION COSTS: 
+                                                      
+                                                    </div>
+                                                    <div class="col bulk-airtime-item-label">
+                                                            KES: 15,000
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                    </div>
+
+
+                                    
+                                    <div class="col">
+                                            <div>
+                                                <img src="../../assets/images/photo/bulk-airtime-2.PNG" class="bulk-airtime-photo" alt="Smiley face">  
+                                                </div>
+                                                <div class="bulk-airtime-label">
+                                                    AITEL:
+                                                </div>
+                                                <div style="border-right: 1px solid black">
+                                                <div class="row">
+                                                        <div class="col bulk-airtime-item-label">
+                                                                Number:
+                                                        </div>
+                                                        <div class="col bulk-airtime-item-label">
+                                                            30
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                            <div class="col bulk-airtime-item-label">
+                                                                    TOTAL AMOUNT:
+                                                            </div>
+                                                            <div class="col bulk-airtime-item-label">
+                                                                KES: 140,000
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col bulk-airtime-item-label">
+                                                            TRANSATION COSTS: 
+                                                            </div>
+                                                            <div class="col bulk-airtime-item-label">
+                                                                    KES: 15,000
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                    </div>
+                                    <div class="col">
+                                            <div>
+                                                    <img src="../../assets/images/photo/bulk-airtime-3.PNG" class="bulk-airtime-photo" alt="Smiley face" > 
+                                                </div>
+                                                <div class="bulk-airtime-label">
+                                                            TELECOM:
+                                                </div>
+                                               
+                                                <div class="row">
+                                                    <div class="col bulk-airtime-item-label">
+                                                         Number:
+                                                    </div>
+                                                    <div class="col bulk-airtime-item-label">
+                                                        30
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col bulk-airtime-item-label">
+                                                            TOTAL AMOUNT:
+                                                        </div>
+                                                        <div class="col bulk-airtime-item-label">
+                                                            KES: 140,000
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col bulk-airtime-item-label">
+                                                        <span>TRANSATION COSTS: </span>
+                                                          
+                                                        </div>
+                                                        <div class="col bulk-airtime-item-label">
+                                                                KES: 15,000
+                                                        </div>
+                                                    </div>
+                                                  
+                                    </div>
+                                 </div>
+
+                                 <hr class="bulk-airtime-hr">
+                                 <div class="payment">
+                                     <div class="bulk-airtime-label"> 
+                                        TOTAL PAYMENT: 
+                                     </div>
+                                     <div style="width: 30%">
+                                            <div class="row">
+                                                    <div class="col bulk-airtime-item-label">
+                                                         Number:
+                                                    </div>
+                                                    <div class="col bulk-airtime-item-label">
+                                                        30
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col bulk-airtime-item-label">
+                                                            TOTAL AMOUNT:
+                                                        </div>
+                                                        <div class="col bulk-airtime-item-label">
+                                                            KES: 140,000
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col bulk-airtime-item-label">
+                                                        <span>TRANSATION COSTS: </span>
+                                                          
+                                                        </div>
+                                                        <div class="col bulk-airtime-item-label">
+                                                                KES: 15,000
+                                                        </div>
+                                                    </div> 
+                                     </div>
+                                 </div>
+                                 <hr class="bulk-airtime-hr">
+
+                                 <div class="payment-account">
+
+                                        <div class="bulk-airtime-label"> 
+                                                PAYMENT ACCOUNT: 
+                                             </div>
+                                        <div class="transact-dropdown">
+                                                <div class="dropdown show dropdown-border">
+                                                        <a class="dropdown-toggle select-clients" href="#" role="button"
+                                                         id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <span class="dropdown-label" style="font-size: 12px">Select Payment Account</span> 
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                           <div class="pl-2 pr-2">
+                                                                <a class="dropdown-item-transact" href="#">Account 1
+                                                                </a>
+                                                            </div>
+                                                            <div class="pl-2 pr-2">
+                                                                <a class="dropdown-item-transact" href="#">Account 2
+                                                                        </a>
+                                                            </div>
+                                                            <div class="pl-2 pr-2">
+                                                                <a class="dropdown-item-transact" href="#">Account 3</a>
+                                                            </div>
+                                                            
+                                                </div>
+                                                </div>
+                                            </div>
+                                 </div>
+
+                                 <div class="row">
+                                        <button class="btn btn-primary btn-lg bulk-confirm-button" type="button" >
+                                            complete
+                                       </button>
+                                    </div>
+                             </div>
+                               
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -1628,7 +1686,9 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-
+           <!--  <footer class="footer text-center">
+                All Rights Reserved by Ample admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+            </footer> -->
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -1643,12 +1703,19 @@
     <!-- ============================================================== -->
     <!-- customizer Panel -->
     <!-- ============================================================== -->
-  
+   
     <div class="chat-windows"></div>
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+	<script>
+	$('.dropdown-menu').on( 'click', 'a', function() {
+		var text = $(this).html();
+		var htmlText = text + ' <span class="caret"></span>';
+		$(this).closest('.dropdown').find('.dropdown-toggle').html(htmlText);
+	});
+	</script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
