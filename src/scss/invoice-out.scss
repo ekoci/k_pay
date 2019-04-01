@@ -1,8 +1,16 @@
 #radio-invoice .notActive{
   color: #3276b1;
   background-color: #fff;
+  border: 1px solid black;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
 }
+#radio-invoice .Active{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #7fd3f2;
 
+}
 .history-invoice{
   padding-top: 35px;
   padding-left: 70px;
@@ -15,8 +23,5 @@
 .radio-invoice-button{
   border: 0px;
   color: black;
-  background-color: #7fd3f2;
-  border-left-radius: 30px;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  width: 100px;
 }
