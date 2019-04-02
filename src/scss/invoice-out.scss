@@ -1,16 +1,4 @@
-#radio-invoice .notActive{
-  color: #3276b1;
-  background-color: #fff;
-  border: 1px solid black;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-}
-#radio-invoice .Active{
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
-  background-color: #7fd3f2;
 
-}
 .history-invoice{
   padding-top: 35px;
   padding-left: 70px;
@@ -25,3 +13,39 @@
   color: black;
   width: 100px;
 }
+
+.radio-invoice-left-button{
+  width: 100px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.radio-invoice-right-button{
+  width: 100px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+#radio-invoice .radio-invoice-left-button.Active{
+  background-color: #7fd3f2;
+  color: black;
+}
+
+#radio-invoice .radio-invoice-right-button.notActive{
+  background-color: #fff;
+  border: 1px solid black;
+  border-left: 0px;
+}
+
+
+#radio-invoice .radio-invoice-left-button.notActive{
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+}
+
+#radio-invoice .radio-invoice-right-button.Active{
+  background-color: #7fd3f2;
+}
+
