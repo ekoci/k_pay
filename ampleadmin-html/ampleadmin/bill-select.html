@@ -1473,7 +1473,7 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper">
+        <div class="page-wrapper" style="display: block;">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
@@ -1529,10 +1529,18 @@
                             <div class="col-lg-2 col-md-6 col-sm-6 text-center">
                                 <img src="../../assets/images/photo/select-bill-add.JPG" alt="Smiley face" width="125">
                             </div>
-                        </div><!-- 
+
+
+                        </div>
+
                         <div class="row" style="padding-top:50px">
-                            
-                        </div> -->
+                            <!-- Trigger the modal with a button -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Default Modal
+                            </button>
+                            <!-- Modal -->
+
+                        </div>
                     </div>
                     <div class="content-shadow"></div>
                 </div>
@@ -1554,7 +1562,51 @@
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-   
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog bill-view" role="document">
+            <div class="modal-content">
+                <div class="header">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <!--                <span aria-hidden="true" style="font-size: 70px;font-weight: 100;">X</span>-->
+                            <div  class="closenew"></div>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+
+                    <div>
+                        <img src="../../assets/images/photo/bill-modal.JPG" alt="Smiley face">
+                    </div>
+
+                    <div>
+                        <form>
+                            <div class="col-md-4 col-xs-12 mb-2">
+                                <label>NAME</label>
+                                <input type="text" id="fee-1" placeholder="NAME" name="name-fee">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                    <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="chat-windows"></div>
     <!-- ============================================================== -->
     <!-- All Jquery -->

@@ -1,0 +1,51 @@
+.modal-dialog.bill-view .modal-content{
+  background-color: transparent;
+  box-shadow: none;
+  border:0px;
+
+}
+
+.modal-dialog .modal-content .header{
+  width: 100%;
+}
+
+.modal-dialog .modal-content .header .close{
+  width: 80px;
+  height: 80px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  right: 0px;
+}
+.bill-view .modal-body{
+  background-color: #06bcec;
+  border-radius: 50px;
+  width: 90%;
+  padding: 50px
+}
+
+
+.closenew {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.closenew:hover {
+  opacity: 1;
+}
+.closenew:before, .closenew:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.closenew:before {
+  transform: rotate(45deg);
+}
+.closenew:after {
+  transform: rotate(-45deg);
+}
