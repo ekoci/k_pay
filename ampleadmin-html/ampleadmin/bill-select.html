@@ -14,6 +14,9 @@
     <!-- Custom CSS -->
 
     <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/dist/css/bootstrap-grid.min.css">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
     <!-- This page plugin CSS -->
     <style>
@@ -1524,25 +1527,32 @@
                                 <img src="../../assets/images/photo/select-bill5.jpg" alt="Smiley face" width="150">
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6 text-center">
-                                 <img src="../../assets/images/photo/select-bill6.jpg" alt="Smiley face" width="150">
+                                    <img src="../../assets/images/photo/select-bill-add.JPG" alt="Smiley face" width="125">
                             </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6 text-center">
-                                <img src="../../assets/images/photo/select-bill-add.JPG" alt="Smiley face" width="125">
-                            </div>
-
-
                         </div>
 
-                        <div class="row" style="padding-top:50px">
-                            <!-- Trigger the modal with a button -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Default Modal
-                            </button>
-                            <!-- Modal -->
+                        
+                        <div style="margin-top:100px">
+                            <form>
 
+                                <div class="form-group">
+                                        <label class="bill-form-label">ACCOUNT NUMBER</label>
+                                        <input type="text" class="bill-main-input" value="536273738388" placeholder="Account Number">
+                                            
+                                </div>
+
+                                <div class="row" id="bill-main-button">
+                                        <button class="btn btn-primary-template mb-2" >SAVE BILL</button>
+                                        <button class="btn btn-primary-template mb-2" type="button" data-toggle="modal" data-target="#paybillmodal"
+                                        style="background-color:#0099dd; border:0px; color:white">PAY BILL</button>
+                                        
+                                </div>
+                                    
+                                    
+                            </form>
                         </div>
                     </div>
-                    <div class="content-shadow"></div>
+                    <div class="bill-select content-shadow"></div>
                 </div>
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
@@ -1562,47 +1572,53 @@
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="paybillmodal" tabindex="-1" role="dialog" aria-labelledby="paybillmodalLabel" aria-hidden="true">
 
         <div class="modal-dialog bill-view" role="document">
             <div class="modal-content">
-                <div class="header">
+                <!-- <div class="header">
                     <div>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <!--                <span aria-hidden="true" style="font-size: 70px;font-weight: 100;">X</span>-->
                             <div  class="closenew"></div>
                         </button>
                     </div>
-                </div>
-                <div class="modal-body">
+                </div> -->
 
+                <div class="modal-header text-center">
+                        <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        </div>
+                <div class="modal-body">
                     <div>
                         <img src="../../assets/images/photo/bill-modal.JPG" alt="Smiley face">
                     </div>
-
                     <div>
                         <form>
-                            <div class="col-md-4 col-xs-12 mb-2">
-                                <label>NAME</label>
-                                <input type="text" id="fee-1" placeholder="NAME" name="name-fee">
+                          
+                            <div class="form-group">
+                                <label class="bill-form-label">ACCOUNT NUMBER</label>
+                                <input type="text" class="bill-input" value="536273738388" placeholder="Account Number"> 
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox mr-sm-2">
-                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                                    <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                <label class="bill-form-label">AMOUNT</label>
+                                <input type="text" class="bill-input" value="KES 3.450" placeholder="Amount">
+                                <div class="icon" data-class="glyphicon glyphicon-edit" data-toggle="modal" data-target="#clipboardModal" name="icons" >
+                                    <i class="glyphicon glyphicon-edit"></i>&nbsp;&nbsp;edit
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                            <div class="form-group">
+                                <label class="bill-form-label">REMAINDER</label>
+                                <input type="text" class="bill-input" value="REMAINDER DATE" placeholder="Remainder">
+                                
+                            </div>
                         </form>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="bill-footer">
+                    <div class="bill-form-button">
+                        PAY BILL
+                    </div>
                 </div>
             </div>
         </div>
