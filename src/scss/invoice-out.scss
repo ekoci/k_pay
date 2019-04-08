@@ -71,10 +71,10 @@
   margin-left: 8.255em;
 }
 
-.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
-  background-color: #b8b8b8;
-  border: 0px;
-}
+// .datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
+//   background-color: #b8b8b8;
+//   border: 0px;
+// }
 
 .invoice-footer{
   width: 100%;height:100px;margin:0px; background-color: #7fd3f2;
@@ -173,4 +173,75 @@
   margin-left: 20px;
   margin-top: 30px;
 }
+}
+
+.datepicker-dropdown.dropdown-menu{
+  padding: 26px;
+  background-color: #c3c3c3;
+  border: 0;
+  
+      th.prev {
+        position: absolute;
+        left: 30px;
+      }
+
+      th.next {
+        position: absolute;
+        left: 41px;
+      }
+      
+        thead tr:nth-child(2) {
+          height: 50px;
+          position: relative;
+        }
+        th.datepicker-switch {
+          position: absolute;
+          text-align: center;
+          left: 0;
+          width: 100%;
+      }
+
+      thead tr:nth-child(3) {
+        background-color: #444040;
+        color: #7fd3f2;
+        font-size: 12px;
+      }
+
+    .datepicker-days th.dow {
+      padding: 5px 10px;
+      border-radius: 0px;
+  }
+
+        td.day {
+          border: 1px solid #444040;
+      }
+
+
+
+}
+
+.datepicker table tr td.active.active, 
+.datepicker table tr td.active.disabled,
+ .datepicker table tr td.active.disabled.active,
+  .datepicker table tr td.active.disabled.disabled,
+   .datepicker table tr td.active.disabled:active,
+    .datepicker table tr td.active.disabled:hover,
+     .datepicker table tr td.active.disabled:hover.active,
+      .datepicker table tr td.active.disabled:hover.disabled,
+       .datepicker table tr td.active.disabled:hover:active,
+        .datepicker table tr td.active.disabled:hover:hover,
+         .datepicker table tr td.active.disabled:hover[disabled],
+          .datepicker table tr td.active.disabled[disabled],
+           .datepicker table tr td.active:active, 
+           .datepicker table tr td.active:hover, 
+           .datepicker table tr td.active:hover.active,
+            .datepicker table tr td.active:hover.disabled, 
+            .datepicker table tr td.active:hover:active, 
+            .datepicker table tr td.active:hover:hover, 
+            .datepicker table tr td.active:hover[disabled], 
+            .datepicker table tr td.active[disabled]{
+              background-color: #444040 !important;
+              color: #7fd3f2 !important;
+              background-image: none !important;
+              border-radius: 0px;
 }
