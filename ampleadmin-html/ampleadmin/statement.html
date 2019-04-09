@@ -13,7 +13,11 @@
     <title>Ample admin Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
 
-    <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">  
+    <link href="../../assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/dist/css/bootstrap-grid.min.css">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
     <!-- This page plugin CSS -->
     <style>
@@ -1511,15 +1515,34 @@
                                         </button>
                                             </div>
                                              <div class="col-md-3 col-xs-12 mb-2"> 
-                                                 <button class="dropdown-toggle btn btn-border-white" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">DATE FROM
-                                            <span class="caret"></span>
+                                                    <button class="dropdown-toggle btn btn-border-white" 
+                                                    type="button"  id='datetimepickerfrom'>DATE FROM
+                                               <span class="input-group-addon">
+                                                                   <span class="glyphicon glyphicon-calendar"></span>
+                                                               </span>
                                         </button>
                                             </div>
-                                            <div class="col-md-3 col-xs-12 mb-2">
-                                                 <button class="dropdown-toggle btn btn-border-white" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">DATE TO
-                                            <span class="caret"></span>
+                                           <div class="col-md-3 col-xs-12 mb-2 dropdown">
+                                                 <button class="dropdown-toggle btn btn-border-white" 
+                                                 type="button"  id='datetimepickerto'>DATE TO
+                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
                                         </button>
-                                            </div>
+                                            </div> 
+                                            <!-- <div class="dropdown invoice-dropdown">
+                                        
+                                                    <div class="form-group">
+                                                        <div class='input-group date' id='datetimepickerfrom'>
+                                                            <a class="dropdown-toggle" >
+                                                                DATE
+                                                             </a>
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
                                             <div class="col-md-3 col-xs-12 mb-2">
                                                  <button class="dropdown-toggle btn btn-border-white" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">UNPAID INVOICES
                                             <span class="caret"></span>
@@ -1533,6 +1556,67 @@
                                             </div>
                                         </div>
                                     </form>
+                                </div>
+
+                                <div class="statement-content">
+
+                                            <div class="row statement-icons" >
+                                                    <div class="statement-icon-header">
+                                                        <img src="../../assets/images/photo/receipt_download.JPG" alt="receipt_download" width="25" height="25">
+                                                        <span style="font-size: 10px"> DOWNLOAD</span></div>
+                                                    <div class="statement-icon-header">
+                                                        <img src="../../assets/images/photo/receipt_share.JPG" alt="receipt_share" width="25" height="25">
+                                                        <span style="font-size: 10px">SHARE</span></div>
+                                                    <div class="statement-icon-header">
+                                                        <img src="../../assets/images/photo/receipt_print.JPG"  alt="receipt_print"  width="25" height="25">
+                                                        <span style="font-size: 10px">PRINT</span></div>
+                                                 
+                                                </div>
+                                    
+                              
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="statement-body-icon">
+                                                <img src="../../assets/images/photo/receipt_cm.JPG"  alt="receipt_cm" width="100">
+                                                <span>KACHELIBA</span>
+                                        </div>
+                                        <div class="statement-body-content">
+                                                <span>Bill to:</span>
+                                                <span>KACHELIBA OLERS</span>
+                                                <span>P.O. BOX 7478</span>
+                                                <span>NAIROBi</span>
+                                        </div>
+                                          
+
+                                    </div>
+                                    
+                                    <div class="col-4">
+
+                                        <div class="statement-account-header">
+                                            <span>
+                                                STATEMENT OF ACCOUNT
+                                            </span>
+                                        </div>
+                                        <div class="statement-account-body">
+                                            <div>
+                                                    <span style="font-weight: bold;">Beginning balance:</span><span>Jan 01, 2010: SH0.00</span>
+                                            </div>
+                                                <div>
+                                                        <span  style="font-weight: bold;">Invoiced:</span><span>SH1,600,000.00</span>
+                                                    </div>
+                                                <div>
+                                                        <span  style="font-weight: bold;">Payments:</span><span>SH1,600,000.00</span>
+                                                    </div>
+                                                <div>
+                                                        <span  style="font-weight: bold;">Refunds:</span><span> SH0.00</span>
+                                                    </div>
+                                                <div>
+                                                        <span  style="font-weight: bold;">Ending balance:</span><span>Mar 06, 2019: SH0.00</span>
+                                                    </div>
+                                        </div>
+
+                                        </div>
                                 </div>
                                  <div class="table-responsive content_table mTop">
                                     <p>(Showing all outstanding balances between 1/01/2019 and 30/02/2019)</p>
@@ -1577,6 +1661,8 @@
                                         </tfoot> -->
                                     </table>
                                 </div>
+
+                                </div>
                             </div>
                             </div>
                         </div>
@@ -1618,10 +1704,25 @@
 		var htmlText = text + ' <span class="caret"></span>';
 		$(this).closest('.dropdown').find('.dropdown-toggle').html(htmlText);
 	});
-	</script>
+    </script>
+    <!-- date picker function -->
+    <script type="text/javascript">
+        $(function () {
+                     $('#datetimepickerfrom').datepicker();
+                 });
+     
+     </script>
+
+    <script type="text/javascript">
+        $(function () {
+                    $('#datetimepickerto').datepicker();
+                });
+    
+    </script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <!-- apps -->
     <script src="../../dist/js/app.min.js"></script>
     <script src="../../dist/js/app.init.mini-sidebar.js"></script>
